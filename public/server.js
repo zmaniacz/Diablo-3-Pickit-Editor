@@ -108,7 +108,7 @@
 
   function getItemInfos(name) {
     for (let item of itemList) {
-      if (item.name === name) {
+      if (item.name.trim() === name) {
         return [item.type, item.img_url];
       }
     }
